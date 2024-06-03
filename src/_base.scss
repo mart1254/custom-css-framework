@@ -1,0 +1,27 @@
+@use'variables';
+@use'font-family';
+@use'typography';
+
+//list styles
+ol, ul {
+    font-size: typography.$font-md;
+    font-weight: typography.$font-weight-normal;
+    margin-bottom: typography.$font-md;
+}
+
+//link style
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+//unordered list
+ul {
+    list-style-type: variables.$list-disc;
+}
+
+//ordered list
+ol {
+    list-style-type: variables.$list-decimal;
+}
+

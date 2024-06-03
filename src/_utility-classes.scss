@@ -1,0 +1,9 @@
+// center text mixin
+@mixin text-center {
+  text-align: center;
+}
+
+//center text
+.text-center {
+  @include text-center;
+}
