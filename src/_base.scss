@@ -29,15 +29,17 @@ ol {
     border-radius: 0.350rem;
     cursor: pointer;
     display: inline-block;
-    font-weight: typography.$font-regular;
+    font-weight: typography.$font-weight-normal;
     line-height: 1.5;
     margin: 0.25rem 0.125rem;
     padding: 0.375rem 0.75rem;
     text-decoration: none;
+    color: #BB4430;
+    background-color: #F3DFA2;
 
     &disabled{
         cursor: not-allowed;
         opacity: 0.65;
         pointer-events: all !important;
     }
-}
+} 
