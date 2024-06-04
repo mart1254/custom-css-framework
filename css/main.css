@@ -5,16 +5,35 @@
 }
 
 h1 {
+
+  font-size: 1.5rem;
+
   font-size: 20px;
+
   font-weight: 700;
 }
 
 h2 {
+
+  font-size: 1rem;
+
   font-size: 16px;
+
   font-weight: 700;
 }
 
 h3 {
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+ol, ul {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -24,6 +43,7 @@ ol, ul {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 16px;
+
 }
 
 a {
@@ -38,6 +58,7 @@ ul {
 ol {
   list-style-type: decimal;
 }
+
 
 
 
@@ -60,6 +81,7 @@ ol {
 }
 
 
+
 .text-center {
   text-align: center;
 }
@@ -67,11 +89,16 @@ ol {
 .container {
   width: 100%;
 
+  padding-left: 15px;
+  padding-right: 15px;
+
+
   padding-left: 10px;
   padding-right: 10px;
 
   padding-left: 15px;
   padding-right: 15px;
+
 
   margin-left: auto;
   margin-right: auto;
@@ -79,32 +106,45 @@ ol {
 
 @media (min-width: 576px) {
 
+  .container {
+
+
   .container-xsm {
 
   .container {
+
 
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
 
+  .container {
+
+
   .container-sm {
 
   .container {
+
 
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
 
+  .container {
+
+
   .container-md {
 
   .container {
+
 
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
+
 
   .container-lg {
     max-width: 1140px;
@@ -141,10 +181,13 @@ ol {
   }
 }
 
+
   .container {
     max-width: 1140px;
   }
 }
+
+
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
