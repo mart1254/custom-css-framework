@@ -1,31 +1,66 @@
+// Container layout
 .container{
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
 @media (min-width: 576px){
-    .container{
+    .container-xsm{
         max-width: 540px;
     }
 }
 
 @media (min-width: 768px){
-    .container{
+    .container-sm{
         max-width: 720px;
     }
 }
 
 @media (min-width: 992px){
-    .container{
+    .container-md{
         max-width: 960px;
     }
 }
 
 @media (min-width: 1200px){
-    .container{
+    .container-lg{
         max-width: 1140px;
+    }
+}
+
+//col and row layout
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 576px){
+    .col-sm{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px){
+    .co-md{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 992px){
+    .co-lg{
+        flex: 0 0 30%;
+        max-width: 30%;
     }
 }
