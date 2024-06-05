@@ -1,3 +1,19 @@
+// Variables for the grid
+$grid-columns: 12;
+$gutter: 12px;
+
+// Mixin for the columns
+//calc function
+//Step 1 Division: 100% / #{$grid-columns} (calulate the width of a column)
+//Step 2 Multiplication: * #{$cols} (multiply the width by the number of columns)
+//Step 3 Subtraction: - #{$gutter * 2} (subtract the gutter width from the column width)
+@mixin column($cols) {
+    width: calc((100% / #{$grid-columns} * #{$cols}) - #{$gutter * 2});
+    margin-left: $gutter;
+    margin-right: $gutter;
+    float: left;
+}
+
 // Container layout
 .container{
     width: 100%;
@@ -31,36 +47,28 @@
     }
 }
 
-//col and row layout
+// Row layout
+// Clearing the floats in the row
 .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+    overflow: hidden;
 }
 
+// Column classes
 .col{
-    padding-left: 10px;
-    padding-right: 10px;
+    float: left;
+    padding: $gutter;
+    box-sizing: border-box;
 }
 
-@media (min-width: 576px){
-    .col-sm{
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media (min-width: 768px){
-    .co-md{
-        flex: 0 0 40%;
-        max-width: 40%;
-    }
-}
-
-@media (min-width: 992px){
-    .co-lg{
-        flex: 0 0 30%;
-        max-width: 30%;
-    }
-}
+.col-1 { @include column(1); }
+.col-2 { @include column(2); }
+.col-3 { @include column(3); }
+.col-4 { @include column(4); }
+.col-5 { @include column(5); }
+.col-6 { @include column(6); }
+.col-7 { @include column(7); }
+.col-8 { @include column(8); }
+.col-9 { @include column(9); }
+.col-10 { @include column(10); }
+.col-11 { @include column(11); }
+.col-12 { @include column(12); }

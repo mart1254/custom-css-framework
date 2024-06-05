@@ -9,7 +9,6 @@ h1 {
   font-weight: 700;
 }
 
-
 h2 {
   font-size: 1rem;
   font-weight: 700;
@@ -64,32 +63,126 @@ ol {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: 576px) {
-  .container {
+  .container-xsm {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container {
+  .container-sm {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container-md {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container-lg {
     max-width: 1140px;
   }
 }
+.row {
+  overflow: hidden;
+}
+
+.col {
+  float: left;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  width: calc(100% / 12 * 1 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-5 {
+  width: calc(100% / 12 * 5 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-8 {
+  width: calc(100% / 12 * 8 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-10 {
+  width: calc(100% / 12 * 10 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-11 {
+  width: calc(100% / 12 * 11 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-12 {
+  width: calc(100% / 12 * 12 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
