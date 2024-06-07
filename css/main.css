@@ -24,6 +24,12 @@ ol, ul {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  list-style: square;
+  margin-left: 50%;
+  margin-right: 50%;
+  font-size: 125%;
+  background-color: #7EBDC2;
+  list-style-type: disc;
 }
 
 a {
@@ -32,7 +38,7 @@ a {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: square;
 }
 
 ol {
