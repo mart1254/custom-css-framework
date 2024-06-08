@@ -5,9 +5,6 @@
 //list styles
 ol, ul {
     font-size: typography.$font-md;
-    font-weight: typography.$font-weight-normal;
-    margin-bottom: typography.$font-md;
-
     list-style: variables.$list-disc;
     margin-left: 50%;
     margin-right: 50%;
