@@ -1,3 +1,4 @@
+@use'variables';
 //font family
 // $font-family: 'Arial', sans-serif;
 
@@ -27,4 +28,14 @@ h3 {
 font-size: $font-sm;
 font-weight: $font-weight-bold;
 margin-bottom: $font-sm;
+}
+
+p {
+font-size: $font-md;
+margin-bottom: $font-md;
+}
+
+p span {
+    color: variables.$info;
+    font-weight: $font-weight-bold;
 }
