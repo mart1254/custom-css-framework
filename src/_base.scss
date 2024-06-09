@@ -43,3 +43,57 @@ ol {
         pointer-events: all !important;
     }
 } 
+
+.btn-primary{
+background-color: variables.$primary;
+border: 1px solid variables.$primary;
+border-radius: .5rem;
+color: variables.$white;
+transition: 0.04s;
+
+&:hover:not(:disabled){
+ 
+    transition: 0.2s;
+}
+}
+
+.btn-danger{
+    background-color: variables.$danger;
+    border: 1px solid variables.$danger;
+    border-radius: .5rem;
+    color: variables.$white;
+    transition: 0.04s;
+    
+    &:hover:not(:disabled){
+        
+        transition: 0.2s;
+    }
+}
+
+.btn-success{
+    background-color: variables.$success;
+    border: 1px solid variables.$success;
+    border-radius: .5rem;
+    color: variables.$black;
+    transition: 0.04s;
+    
+    &:hover:not(:disabled){
+     
+        transition: 0.2s;
+    }
+
+}
+
+.btn-info{
+    background-color: variables.$info;
+    border: 1px solid variables.$info;
+    border-radius: .5rem;
+    color: variables.$white;
+    transition: 0.04s;
+    
+    &:hover:not(:disabled){
+        
+        transition: 0.2s;
+    }
+
+}

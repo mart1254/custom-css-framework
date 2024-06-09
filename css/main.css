@@ -57,6 +57,50 @@ ol {
   pointer-events: all !important;
 }
 
+.btn-primary {
+  background-color: #231f20;
+  border: 1px solid #231f20;
+  border-radius: 0.5rem;
+  color: #efe6dd;
+  transition: 0.04s;
+}
+.btn-primary:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
+.btn-danger {
+  background-color: #BB4430;
+  border: 1px solid #BB4430;
+  border-radius: 0.5rem;
+  color: #efe6dd;
+  transition: 0.04s;
+}
+.btn-danger:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
+.btn-success {
+  background-color: #f3dfa2;
+  border: 1px solid #f3dfa2;
+  border-radius: 0.5rem;
+  color: #231f20;
+  transition: 0.04s;
+}
+.btn-success:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
+.btn-info {
+  background-color: #7ebdc2;
+  border: 1px solid #7ebdc2;
+  border-radius: 0.5rem;
+  color: #efe6dd;
+  transition: 0.04s;
+}
+.btn-info:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
 .text-center {
   text-align: center;
 }
