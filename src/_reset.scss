@@ -24,10 +24,13 @@ a, button {
     cursor: revert;
 }
 
-/* Remove list styles (bullets/numbers) */
+/*
+-This reset was conflicting with list styles-
+
 ol, ul, menu, summary {
     list-style: none;
 }
+*/
 
 /* For images to not be able to exceed their container */
 img {
