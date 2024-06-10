@@ -4,7 +4,7 @@
 
 ## Installation of Companion Framework
 Companion Framework can be installed through the use of npm via console:\
-`npm i companion-framework`\
+`npm i @mart1254/companion-framework`\
 Where you can edit the example index.html or link your current file to the main.css
 
 Companion Framework can also be cloned from GitHub:\
