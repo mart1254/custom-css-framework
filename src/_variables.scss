@@ -50,3 +50,82 @@ $table-hover: lighten($blue, 5%);
 
 
 
+
+// CSS Classes
+.padding-xsm {
+    padding: $padding-xsm;
+  }
+
+  .padding-sm {
+    padding: $padding-sm;
+  }
+
+  .padding-md {
+    padding: $padding-md;
+  }
+
+  .padding-lg {
+    padding: $padding-lg;
+  }
+  
+  .list-disc {
+    list-style-type: $list-disc;
+  }
+
+  .list-decimal {
+    list-style-type: $list-decimal;
+  }
+
+  .list-alpha {
+    list-style-type: $list-alpha;
+  }
+
+  .list-roman {
+    list-style-type: $list-roman;
+  }
+  
+  .color-black {
+    color: $black;
+  }
+
+  .color-white {
+    color: $white;
+  }
+
+  .color-yellow {
+    color: $yellow;
+  }
+
+  .color-blue {
+    color: $blue;
+  }
+
+  .color-red {
+    color: $red;
+  }
+  
+  .bg-primary {
+    background-color: $primary;
+  }
+
+  .bg-danger {
+    background-color: $danger;
+  }
+
+  .bg-success {
+    background-color: $success;
+  }
+
+  .bg-info {
+    background-color: $info;
+  }
+  
+  .img-responsive {
+    width: $img-width;
+  }
+
+  .img-shadow {
+    box-shadow: $img-shadow;
+  }
+
+

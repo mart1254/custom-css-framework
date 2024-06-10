@@ -1,4 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.padding-xsm {
+  padding: 15px;
+}
+
+.padding-sm {
+  padding: 30px;
+}
+
+.padding-md {
+  padding: 45px;
+}
+
+.padding-lg {
+  padding: 60px;
+}
+
+.list-disc {
+  list-style-type: square;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-alpha {
+  list-style-type: upper-alpha;
+}
+
+.list-roman {
+  list-style-type: lower-roman;
+}
+
+.color-black {
+  color: #231f20;
+}
+
+.color-white {
+  color: #efe6dd;
+}
+
+.color-yellow {
+  color: #f3dfa2;
+}
+
+.color-blue {
+  color: #7ebdc2;
+}
+
+.color-red {
+  color: #BB4430;
+}
+
+.bg-primary {
+  background-color: #231f20;
+}
+
+.bg-danger {
+  background-color: #BB4430;
+}
+
+.bg-success {
+  background-color: #f3dfa2;
+}
+
+.bg-info {
+  background-color: #7ebdc2;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.img-shadow {
+  box-shadow: 5px 5px 20px rgba(109, 107, 107, 0.4196078431);
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
@@ -45,6 +121,78 @@ p span {
   color: #BB4430;
 }
 
+.font-xsm {
+  font-size: 0.5rem;
+}
+
+.font-sm {
+  font-size: 0.8rem;
+}
+
+.font-md {
+  font-size: 1rem;
+}
+
+.font-lg {
+  font-size: 2rem;
+}
+
+.font-lg1 {
+  font-size: 2.5rem;
+}
+
+.font-lg2 {
+  font-size: 3rem;
+}
+
+.font-lg3 {
+  font-size: 3.5rem;
+}
+
+.font-lg4 {
+  font-size: 4rem;
+}
+
+.font-lg5 {
+  font-size: 4.5rem;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
 ol,
 ul {
   margin-left: 50%;
@@ -54,7 +202,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: #7ebdc2;
 }
 
 ul {
