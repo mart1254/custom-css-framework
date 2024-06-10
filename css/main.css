@@ -17,3 +17,339 @@ body::before {
   border-bottom: 2px solid black;
   content: 'Error: There is no module with the namespace "typography".\a    \2577 \a 14 \2502      font-size: typography.$font-md;\d\a    \2502                 ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\_variables.scss 14:16  @use\a   src\\_base.scss 1:1         @use\a   src\\main.scss 1:1          root stylesheet';
 }
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+p span {
+  color: #7ebdc2;
+  font-weight: 700;
+}
+
+ol, ul {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+.btn {
+  border-radius: 0.35rem;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0.25rem 0.125rem;
+  padding: 0.375rem 0.75rem;
+  text-decoration: none;
+  color: #BB4430;
+  background-color: #F3DFA2;
+}
+.btndisabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: all !important;
+}
+
+.btn-primary {
+  background-color: #231f20;
+  border: 1px solid #231f20;
+  border-radius: 0.5rem;
+  color: #efe6dd;
+  transition: 0.04s;
+}
+.btn-primary:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
+.btn-danger {
+  background-color: #BB4430;
+  border: 1px solid #BB4430;
+  border-radius: 0.5rem;
+  color: #efe6dd;
+  transition: 0.04s;
+}
+.btn-danger:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
+.btn-success {
+  background-color: #f3dfa2;
+  border: 1px solid #f3dfa2;
+  border-radius: 0.5rem;
+  color: #231f20;
+  transition: 0.04s;
+}
+.btn-success:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
+.btn-info {
+  background-color: #7ebdc2;
+  border: 1px solid #7ebdc2;
+  border-radius: 0.5rem;
+  color: #efe6dd;
+  transition: 0.04s;
+}
+.btn-info:hover:not(:disabled) {
+  transition: 0.2s;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container-xsm {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-sm {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-md {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-lg {
+    max-width: 1140px;
+  }
+}
+.row {
+  overflow: hidden;
+}
+
+.col {
+  float: left;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  width: calc(100% / 12 * 1 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-5 {
+  width: calc(100% / 12 * 5 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-8 {
+  width: calc(100% / 12 * 8 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-10 {
+  width: calc(100% / 12 * 10 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-11 {
+  width: calc(100% / 12 * 11 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+.col-12 {
+  width: calc(100% / 12 * 12 - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+  float: left;
+}
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Fix mobile Safari increase font-size on landscape mode */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu, summary {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  --webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  --webkit-line-break: after-white-space;
+  --webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
+
