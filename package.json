@@ -1,0 +1,22 @@
+{
+  "name": "@mart1254/companion-framework",
+  "version": "1.0.0",
+  "description": "Is the string companion-framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mart1254/custom-css-framework.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "mart1254",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mart1254/custom-css-framework/issues"
+  },
+  "homepage": "https://github.com/mart1254/custom-css-framework#readme"
+}
