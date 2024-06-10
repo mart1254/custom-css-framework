@@ -47,13 +47,9 @@ p span {
 
 ol,
 ul {
-  font-size: 1rem;
-  list-style: square;
   margin-left: 50%;
   margin-right: 50%;
   font-size: 125%;
-  background-color: #7EBDC2;
-  list-style-type: disc;
 }
 
 a {
@@ -376,11 +372,13 @@ a, button {
   cursor: revert;
 }
 
-/* Remove list styles (bullets/numbers) */
-ol, ul, menu, summary {
-  list-style: none;
-}
+/*
+-This reset was conflicting with list styles-
 
+ol, ul, menu, summary {
+    list-style: none;
+}
+*/
 /* For images to not be able to exceed their container */
 img {
   max-inline-size: 100%;
