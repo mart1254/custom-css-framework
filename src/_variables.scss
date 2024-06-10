@@ -4,11 +4,19 @@ $padding-md: 45px;
 $padding-lg: 60px;
 
 //list-style types
-$list-disc: disc;
+$list-disc: square;
 $list-decimal: decimal;
 $list-alpha: upper-alpha;
 $list-roman: lower-roman;
 
+//list styles
+ol, ul {
+    font-size: typography.$font-md;
+    list-style: variables.$list-disc;
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 125%;
+}
 
 
 //Colors
