@@ -1,3 +1,4 @@
+@use 'variables';
 //font family
 // $font-family: 'Arial', sans-serif;
 
@@ -63,6 +64,12 @@ h6 {
 p {
     font-size: $font-md;
     font-weight: $font-weight-normal;
+    margin: $font-lg;
+}
+
+p span {
+    font-weight: $font-weight-bold;
+    color: variables.$danger;
 }
 
 // Forms
