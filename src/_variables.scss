@@ -9,15 +9,6 @@ $list-decimal: decimal;
 $list-alpha: upper-alpha;
 $list-roman: lower-roman;
 
-//list styles
-ol, ul {
-    font-size: typography.$font-md;
-    list-style: variables.$list-disc;
-    margin-left: 50%;
-    margin-right: 50%;
-    font-size: 125%;
-}
-
 
 //Colors
 $black: #231f20;

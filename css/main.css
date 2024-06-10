@@ -1,21 +1,7 @@
-/* Error: There is no module with the namespace "typography".
- *    ,
- * 14 |     font-size: typography.$font-md;
- *    |                ^^^^^^^^^^^^^^^^^^^
- *    '
- *   src\_variables.scss 14:16  @use
- *   src\_base.scss 1:1         @use
- *   src\main.scss 1:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "typography".\a    \2577 \a 14 \2502      font-size: typography.$font-md;\d\a    \2502                 ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\_variables.scss 14:16  @use\a   src\\_base.scss 1:1         @use\a   src\\main.scss 1:1          root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
 }
 
 h1 {
@@ -46,8 +32,12 @@ p span {
 
 ol, ul {
   font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
+  list-style: square;
+  margin-left: 50%;
+  margin-right: 50%;
+  font-size: 125%;
+  background-color: #7EBDC2;
+  list-style-type: disc;
 }
 
 a {
@@ -56,7 +46,7 @@ a {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: square;
 }
 
 ol {
@@ -352,4 +342,3 @@ meter {
 }
 
 /*# sourceMappingURL=main.css.map */
-
