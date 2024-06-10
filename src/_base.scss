@@ -3,7 +3,8 @@
 @use'typography';
 
 //list styles
-ol, ul {
+ol,
+ul {
     font-size: typography.$font-md;
     list-style: variables.$list-disc;
     margin-left: 50%;
@@ -16,8 +17,8 @@ ol, ul {
 
 //link style
 a {
- text-decoration: none;
- color: blue;
+    text-decoration: none;
+    color: blue;
 }
 
 //unordered list
@@ -30,75 +31,171 @@ ol {
     list-style-type: variables.$list-decimal;
 }
 
-.btn{
+.btn {
     border-radius: 0.350rem;
     cursor: pointer;
     display: inline-block;
     font-weight: typography.$font-weight-normal;
     line-height: 1.5;
-    margin: 0.25rem 0.125rem;
-    padding: 0.375rem 0.75rem;
+    margin: 0.2rem 0.12rem;
+    padding: 0.40rem 0.70rem;
     text-decoration: none;
-    color: #BB4430;
-    background-color: #F3DFA2;
+    color: variables.$red;
+    background-color: variables.$yellow;
+    text-align: typography.$text-center;
 
-    &disabled{
+    &disabled {
         cursor: not-allowed;
         opacity: 0.65;
         pointer-events: all !important;
     }
-} 
-
-.btn-primary{
-background-color: variables.$primary;
-border: 1px solid variables.$primary;
-border-radius: .5rem;
-color: variables.$white;
-transition: 0.04s;
-
-&:hover:not(:disabled){
- 
-    transition: 0.2s;
-}
 }
 
-.btn-danger{
+.btn-primary {
+    background-color: variables.$primary;
+    border: 1px solid variables.$primary;
+    border-radius: .5rem;
+    color: variables.$blue;
+    transition: 0.04s;
+
+    &:hover:not(:disabled) {
+        background-color: variables.$blue;
+        border: 1px solid variables.$blue;
+        color: variables.$black;
+        transition: 0.2s;
+    }
+}
+
+.btn-danger {
     background-color: variables.$danger;
     border: 1px solid variables.$danger;
     border-radius: .5rem;
     color: variables.$white;
     transition: 0.04s;
-    
-    &:hover:not(:disabled){
-        
+
+    &:hover:not(:disabled) {
+        background-color: variables.$white;
+        color: variables.$danger;
         transition: 0.2s;
     }
 }
 
-.btn-success{
+.btn-success {
     background-color: variables.$success;
     border: 1px solid variables.$success;
     border-radius: .5rem;
     color: variables.$black;
     transition: 0.04s;
-    
-    &:hover:not(:disabled){
-     
+
+    &:hover:not(:disabled) {
+        background-color: variables.$black;
+        color: variables.$yellow;
         transition: 0.2s;
     }
 
 }
 
-.btn-info{
+.btn-info {
     background-color: variables.$info;
     border: 1px solid variables.$info;
     border-radius: .5rem;
     color: variables.$white;
     transition: 0.04s;
-    
-    &:hover:not(:disabled){
-        
+
+    &:hover:not(:disabled) {
+        background-color: variables.$white;
+        color: variables.$info;
         transition: 0.2s;
     }
 
 }
+
+// Images
+img {
+    width: variables.$img-width;
+    margin: 5px 5px 20px;
+    box-shadow: variables.$img-shadow;
+}
+
+// Forms
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: typography.$label-font-weight;
+    margin-bottom: variables.$label-margin-bottom;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="color"] {
+    padding: variables.$input-padding;
+    margin: variables.$input-margin;
+    border: variables.$input-border;
+    border-radius: variables.$input-border-radius;
+    font-size: typography.$input-font-size;
+    width: 100%;
+    box-sizing: border-box;
+
+    &::placeholder {
+        font-style: typography.$placeholder-font;
+    }
+  }
+  
+// Tables
+table {
+    border-collapse: collapse;
+    border: 2px solid variables.$primary;
+    width: 100%;
+  }
+  
+  caption {
+    padding: variables.$padding-xsm;
+    font-size: typography.$font-lg;
+    font-weight: typography.$font-weight-semi-bold;
+  }
+  
+  
+  thead,
+  tfoot {
+    background-color: variables.$yellow;
+  }
+  
+  th {
+    font-weight: typography.$font-weight-semi-bold;
+  }
+ 
+  th,
+  td {
+    border: 1px solid variables.$primary;
+    padding: variables.$padding-xsm;
+  }
+  
+  
+  td:last-of-type {
+    text-align: typography.$text-center;
+  }
+  
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: variables.$white;
+  }
+
+  tr:hover:not(:disabled) {
+        background-color: variables.$table-hover;
+        transition: 0.15s;
+    }
+ 
+  tfoot th {
+    text-align: typography.$text-justify;
+  }
+  
+  tfoot td {
+    font-weight: typography.$font-weight-semi-bold;
+  }
+
+
