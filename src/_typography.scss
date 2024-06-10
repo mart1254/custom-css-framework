@@ -1,4 +1,3 @@
-@use'variables';
 //font family
 // $font-family: 'Arial', sans-serif;
 
@@ -6,7 +5,14 @@
 $font-xsm: 0.5rem;
 $font-sm: 0.8rem;
 $font-md: 1rem;
-$font-lg: 1.5rem;
+$font-lg: 2.0rem;
+
+$font-lg1: 2.5rem;
+$font-lg2: 3.0rem;
+$font-lg3: 3.5rem;
+$font-lg4: 4.0rem;
+$font-lg5: 4.5rem;
+
 
 //font- weight
 $font-weight-light: 300;
@@ -15,27 +21,52 @@ $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
+// Font alignment
+$text-center: center;
+$text-left: left;
+$text-right: right;
+$text-justify: justify;
+
+
 //Headings
 h1 {
-font-size: $font-lg;
-font-weight: $font-weight-bold;
+    font-size: $font-lg5;
+    font-weight: $font-weight-bold;
 }
+
 h2 {
-font-size: $font-md;
-font-weight: $font-weight-bold;
+    font-size: $font-lg4;
+    font-weight: $font-weight-bold;
 }
+
 h3 {
-font-size: $font-sm;
-font-weight: $font-weight-bold;
-margin-bottom: $font-sm;
+    font-size: $font-lg3;
+    font-weight: $font-weight-bold;
+    // margin-bottom: $font-sm;
+}
+
+h4 {
+    font-size: $font-lg2;
+    font-weight: $font-weight-bold;
+}
+
+h5 {
+    font-size: $font-lg1;
+    font-weight: $font-weight-bold;
+}
+
+h6 {
+    font-size: $font-lg;
+    font-weight: $font-weight-bold;
 }
 
 p {
-font-size: $font-md;
-margin-bottom: $font-md;
+    font-size: $font-md;
+    font-weight: $font-weight-normal;
 }
 
-p span {
-    color: variables.$info;
-    font-weight: $font-weight-bold;
-}
+// Forms
+$placeholder-font: italic;
+$input-font-size: $font-md;
+$label-font-weight: $font-weight-bold;
+
