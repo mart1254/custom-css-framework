@@ -77,3 +77,79 @@ $placeholder-font: italic;
 $input-font-size: $font-md;
 $label-font-weight: $font-weight-bold;
 
+
+
+
+// CSS font classes
+.font-xsm {
+    font-size: $font-xsm;
+  }
+
+  .font-sm {
+    font-size: $font-sm;
+  }
+
+  .font-md {
+    font-size: $font-md;
+  }
+
+  .font-lg {
+    font-size: $font-lg;
+  }
+
+  .font-lg1 {
+    font-size: $font-lg1;
+  }
+
+  .font-lg2 {
+    font-size: $font-lg2;
+  }
+
+  .font-lg3 {
+    font-size: $font-lg3;
+  }
+
+  .font-lg4 {
+    font-size: $font-lg4;
+  }
+
+  .font-lg5 {
+    font-size: $font-lg5;
+  }
+  
+  .font-weight-light {
+    font-weight: $font-weight-light;
+  }
+
+  .font-weight-normal {
+    font-weight: $font-weight-normal;
+  }
+
+  .font-weight-medium {
+    font-weight: $font-weight-medium;
+  }
+
+  .font-weight-semi-bold {
+    font-weight: $font-weight-semi-bold;
+  }
+
+  .font-weight-bold {
+    font-weight: $font-weight-bold;
+  }
+  
+  .txt-center {
+    text-align: $text-center;
+  }
+
+  .txt-left {
+    text-align: $text-left;
+  }
+
+  .txt-right {
+    text-align: $text-right;
+  }
+
+  .txt-justify {
+    text-align: $text-justify;
+  }
+
